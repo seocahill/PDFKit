@@ -32,7 +32,6 @@ class PDFKit
   def command(path = nil)
     args = [executable]
     args += @options.to_a.flatten.compact
-#    changed --quite to --quit
     args << '--quit'
 
     if @source.html?
